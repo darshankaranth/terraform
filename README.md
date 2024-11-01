@@ -19,7 +19,8 @@ module "app_instance" {
 
 output "app_public_ip" {
   description = "app public ip"
-  value       = module.app_instance.app_public_ip
+  value       = module.app_instance.app_publicip
 }
+
 
 ```
