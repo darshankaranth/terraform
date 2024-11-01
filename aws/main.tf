@@ -63,4 +63,9 @@ resource "aws_eip" "app_eip" {
     Name = local.app_name
   }
 
+output "app_publicip" {
+  description = "Contains public IP of the instance"
+  value = aws_eip.app_eip.public_ip
+  }
+
 }
